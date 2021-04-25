@@ -1,0 +1,42 @@
+@import "../stylesheet.scss";
+
+.infoBlock {
+  background-color: $white;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: $gray-5;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: 0.72px;
+  @include desktop-text-styles-h2-desktop;
+}
+.contentBlock {
+  display: flex;
+  align-items: flex-start;
+}
+.subtitle {
+  width: 300px;
+  color: $gray-5;
+  text-transform: uppercase;
+  margin-right: 48px;
+  @include desktop-text-styles-link-normal-desktop;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 700px;
+}
+.bodyText {
+  color: $gray-5;
+  margin-bottom: 12px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  @include desktop-text-styles-text-big-desktop;
+}

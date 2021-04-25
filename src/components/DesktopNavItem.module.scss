@@ -1,0 +1,84 @@
+@import "../stylesheet.scss";
+
+.navItem {
+  background-color: $white;
+  color: $green;
+  position: relative;
+  display: block;
+}
+.navItem:hover {
+  background-color: $green;
+  cursor: pointer;
+}
+.navItem:hover .mainLink {
+  color: $white;
+}
+.navItem:hover .icon {
+  color: $white;
+}
+.mainLink {
+  text-decoration: none;
+  color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 16px;
+  height: 28px;
+}
+.label {
+  text-align: center;
+  text-transform: uppercase;
+  @include desktop-text-styles-menu-item-desktop;
+}
+.logo {
+  height: 28px !important;
+}
+.icon {
+  color: $green;
+}
+.languageItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.languageItem .icon {
+  margin-right: 4px;
+}
+
+.dropDown {
+  display: none;
+  position: absolute;
+  background-color: $green;
+  z-index: 1;
+  padding: 12px;
+  min-width: 200px;
+}
+
+.navItem:hover .dropDown {
+  display: block;
+}
+
+.subMenuItem {
+  color: $white;
+  @include desktop-text-styles-menu-sub-item-desktop;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+}
+.subMenuItem:hover {
+  background-color: $transparent-white;
+}
+
+.sectionTitle {
+  @include desktop-text-styles-h4-desktop;
+  color: $light-green;
+  padding: 8px 12px;
+}
+.sectionSeparator {
+  width: 40px;
+  height: 1px;
+  background-color: $light-green;
+  margin-top: 8px;
+}

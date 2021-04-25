@@ -1,0 +1,16 @@
+@import "../stylesheet.scss";
+
+.desktopNavHeader {
+  background-color: $white;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+.frame1 {
+  display: flex;
+  align-items: flex-start;
+}

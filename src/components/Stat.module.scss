@@ -1,0 +1,35 @@
+@import "../stylesheet.scss";
+
+.desktopStat {
+  padding: 24px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.statIcon {
+  margin-bottom: 8px;
+}
+.title {
+  width: auto;
+  color: $gray-5;
+  text-align: center;
+  letter-spacing: 0.72px;
+  @include desktop-text-styles-text-large-desktop;
+  margin: 0px;
+}
+.subtitle {
+  color: $gray-4;
+  align-self: center;
+  text-align: center;
+  letter-spacing: 0.48px;
+  @include desktop-text-styles-text-normal-desktop;
+  margin: 0px;
+}

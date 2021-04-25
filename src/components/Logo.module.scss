@@ -1,0 +1,13 @@
+@import "../stylesheet.scss";
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+.akdnLogo1 {
+  &:not(:last-of-type) {
+    margin-right: 3.78px;
+  }
+  height: inherit;
+}

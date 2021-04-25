@@ -1,0 +1,18 @@
+@import "../stylesheet.scss";
+
+.desktopPdfLink {
+  background-color: $transparent-dark-slate-gray;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonLabel {
+  color: $blue;
+  margin-right: 24px;
+  letter-spacing: 0.48px;
+  @include desktop-text-styles-link-normal-desktop;
+}
+.iconArrowRight {
+  height: 32px;
+}

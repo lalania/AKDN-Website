@@ -1,0 +1,26 @@
+@import "../stylesheet.scss";
+
+.desktopStats {
+  display: flex;
+  align-items: center;
+}
+.desktopStat {
+  flex: 1;
+  &:not(:last-of-type) {
+    margin-right: 0px;
+  }
+}
+.verticalDivider {
+  width: 1px;
+  background-color: $transparent-dark-slate-gray;
+  margin-right: 0px;
+  align-self: stretch;
+}
+.statContainer {
+  display: flex;
+  align-items: center;
+}
+
+.statContainer:last-child .verticalDivider {
+  width: 0px;
+}
